@@ -1,4 +1,4 @@
-package me.justeli.util;
+package me.justeli.util.spigot.core;
 
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;

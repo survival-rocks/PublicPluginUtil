@@ -7,12 +7,21 @@
     <name>PublicPluginUtil</name>
     <groupId>me.justeli.util</groupId>
     <artifactId>PublicPluginUtil</artifactId>
-    <version>0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>spigot-core</module>
+        <module>spigot-commands</module>
+        <module>spigot-chat</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.build.timestamp.format>MMM d, HH:mm</maven.build.timestamp.format>
 
         <versions.minecraft>1.16.1</versions.minecraft>
         <versions.authlib>1.5.21</versions.authlib>
@@ -128,56 +137,4 @@
             </resource>
         </resources>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>${versions.minecraft}-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.mojang</groupId>
-            <artifactId>authlib</artifactId>
-            <version>${versions.authlib}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- Compile -->
-        <dependency>
-            <groupId>org.bstats</groupId>
-            <artifactId>bstats-bukkit</artifactId>
-            <version>${versions.bstats}</version>
-        </dependency>
-        <dependency>
-            <groupId>community.leaf.tasks</groupId>
-            <artifactId>tasks-bukkit</artifactId>
-            <version>${versions.tasks}</version>
-        </dependency>
-        <dependency>
-            <groupId>community.leaf.textchain</groupId>
-            <artifactId>textchain-bukkit</artifactId>
-            <version>${versions.textchain}</version>
-        </dependency>
-        <dependency>
-            <groupId>cloud.commandframework</groupId>
-            <artifactId>cloud-paper</artifactId>
-            <version>${versions.cloud}</version>
-        </dependency>
-        <dependency>
-            <groupId>net.kyori</groupId>
-            <artifactId>adventure-api</artifactId>
-            <version>${versions.adventure-api}</version>
-        </dependency>
-        <dependency>
-            <groupId>net.kyori</groupId>
-            <artifactId>adventure-platform-bukkit</artifactId>
-            <version>${versions.adventure-platform}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.papermc</groupId>
-            <artifactId>paperlib</artifactId>
-            <version>${versions.paperlib}</version>
-        </dependency>
-    </dependencies>
 </project>

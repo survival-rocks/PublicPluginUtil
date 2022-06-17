@@ -1,4 +1,4 @@
-package me.justeli.util;
+package me.justeli.util.spigot.core;
 
 import cloud.commandframework.CommandTree;
 import cloud.commandframework.bukkit.BukkitCommandManager;
@@ -29,7 +29,7 @@ public abstract class Module
 {
     private @NullOr BukkitAudiences audiences;
     protected PluginManager pluginManager;
-    protected BukkitCommandManager<CommandSender> commandManager;
+
 
     public abstract void enable ();
     public abstract void disable ();

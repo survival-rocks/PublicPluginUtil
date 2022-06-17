@@ -1,4 +1,4 @@
-package me.justeli.util;
+package me.justeli.util.spigot.core;
 
 import com.google.gson.JsonParser;
 import net.md_5.bungee.api.ChatColor;
